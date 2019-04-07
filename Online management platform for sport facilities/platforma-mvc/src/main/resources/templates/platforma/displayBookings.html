@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="description" content="Book different sport facility or manane your own one."/>
+	  <meta name="keywords" content="booking, sport facility, management"/>
+  	<meta name="author" content="Andrei Jitaru"/>
+    <title>Sport Booking | Welcome</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Sport</span> Booking</h1>
+        </div>
+        <nav>
+          <ul>
+
+            <li><a href="/platforma/home">Acasa</a></li>
+            <li><a href="/platforma/about">Despre noi</a></li>
+            <li ><a href="/platforma/services">Servicii</a></li>
+            <li class="current"><a href="/platforma/displayBookings">Rezervarile mele</a></li>
+            <li><a href="/platforma">Deconecteaza-te</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="card-showcase">
+     <div>
+       <table class="table">
+         <tr>
+           <th>Baza sportiva</th>
+           <th>Sport</th>
+           <th>Numar teren</th>
+           <th>Data</th>
+           <th>Ora</th>
+         </tr>
+
+         <tr th:each="rezervare : ${rezervari}">
+           <td th:text="${rezervare.numeBazaSportiva}"></td>
+           <td th:text="${rezervare.sport.name}"></td>
+           <td th:text="${rezervare.numarTeren}"></td>
+           <td th:text="${rezervare.data}"></td>
+           <td th:text="${rezervare.ora}"></td>
+         </tr>
+
+       </table>
+     </div>
+   </section>
+
+    <footer>
+      <p>Sport Booking, Copyright &copy; 2019</p>
+    </footer>
+
+  </body>
+</html>

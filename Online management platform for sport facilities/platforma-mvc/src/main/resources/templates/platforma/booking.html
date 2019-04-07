@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width"/>
+  <meta name="description" content="Book different sport facility or manane your own one."/>
+  <meta name="keywords" content="booking, sport facility, management"/>
+  <meta name="author" content="Andrei Jitaru"/>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <title>Sport Booking | Services</title>
+  <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+  <link rel="stylesheet" href="/css/style.css"/>
+  <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+</head>
+<body>
+<header>
+  <div class="container">
+    <div id="branding">
+      <h1><span class="highlight">Sport</span> Booking</h1>
+    </div>
+    <nav>
+      <ul>
+
+        <li><a href="/platforma/home">Acasa</a></li>
+        <li><a href="/platforma/about">Despre noi</a></li>
+        <li><a href="/platforma/services">Servicii</a></li>
+        <li><a href="/platforma/displayBookings">Rezervarile mele</a></li>
+        <li><a href="/platforma">Deconecteaza-te</a></li>
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="booking-showcase">
+  <form method="post">
+    <div class="container">
+      <h1 style="text-shadow: 3px 2px red;">Alege oferta care ti se pare cea mai convenabila!</h1>
+      <div class="form-group">
+        <label th:for="denumire"/>
+        <select name="denumire" class="drop-down-booking" th:object="${denumire}">
+          <option th:each="denumire : ${denumiri}"
+                  th:text="${denumire}"
+                  th:value="${denumire}"></option>
+        </select>
+        <input type="submit" class="button_1" value="Creeaza"/>
+      </div>
+    </div>
+    <div id="map"></div>
+  </form>
+</section>
+
+<footer>
+  <p>Sport Booking, Copyright &copy; 2019</p>
+</footer>
+
+<script>
+       L.mapbox.accessToken = 'pk.eyJ1IjoiYW5kcmVpLWppdGFydTEwIiwiYSI6ImNqcXI4dTFweDA5cms0M3BrZHpnNWxzcGUifQ.hmFX__cs-KahJbjv94fOzQ';
+       var map = L.mapbox.map('map', 'mapbox.streets').setView([45.6523093, 25.6102746], 6);
+
+       L.marker([46.7699626, 23.635065106896395]).addTo(map);
+       L.marker([46.749497500000004, 23.54128267686258]).addTo(map);
+       L.marker([46.7796886, 24.7000238]).addTo(map);
+       L.marker([47.0596749, 22.3973751]).addTo(map);
+       L.marker([47.9283242, 23.8915583]).addTo(map);
+       L.marker([47.0549163, 21.9285231]).addTo(map);
+       L.marker([44.4361414, 26.1027202]).addTo(map);
+
+    </script>
+</body>
+</html>

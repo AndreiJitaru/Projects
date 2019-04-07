@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="description" content="Book different sport facility or manane your own one."/>
+	  <meta name="keywords" content="booking, sport facility, management"/>
+  	<meta name="author" content="Andrei Jitaru"/>
+    <title>Sport Booking | Services</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+  </head>
+  <body>
+    <section>
+      <div id="id02" class="modal">
+        <form class="modal-content animate" method="post">
+          <div class="container-logIn">
+            <div class="imgcontainer">
+              <h1>Formular de inregistrare</h1>
+            </div>
+            <p>Va rugam sa completati acest formular pentru a crea un cont.</p>
+            <hr></hr>
+            <label th:for="username"><b>Username</b></label>
+            <input type="text" placeholder="Introduceti username" name="numeUtilizator"/>
+            <label th:for="psw"><b>Parola</b></label>
+            <input type="password" placeholder="Introduceti parola" name="parola"/>
+            <label th:for="email"><b>Email</b></label>
+            <input type="text" placeholder="Introduceti email" name="email"/>
+            <label th:for="first-name"><b>Nume</b></label>
+            <input type="text" placeholder="Introduceti numele" name="prenume"/>
+            <label th:for="last-name"><b>Prenume</b></label>
+            <input type="text" placeholder="Introduceti prenumele" name="nume"/>
+            <label th:for="phone-number"><b>Numar de telefon</b></label>
+            <input type="text" placeholder="Introduceti numarul de telefon" name="numarTelefon"/>
+            <br></br>
+            <div class="clearfix">
+              <a href="http://localhost:8080/platforma" class="cancelbtn-signUp">Anuleaza</a>
+              <input type="submit" value="Inregistreaza-te"  class="button-signUp"/>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

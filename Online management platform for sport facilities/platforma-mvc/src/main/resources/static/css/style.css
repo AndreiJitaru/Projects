@@ -1,0 +1,644 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+.container h1{
+  color:#e8491d;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+  font-size: 17px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 12px;
+  border: 2px solid #ffffff;
+}
+
+.button_1:hover {
+  background-color: white; /* Green */
+  color: #e8491d;
+  border: 2px solid #e8491d;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:20px;
+  min-height:50px;
+  border-bottom:#e8491d 3px solid;
+  top:0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+  z-index: 1;
+}
+
+header #branding h1{
+  margin:0;
+  color: white;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+.highlight-shadow{
+  color:#e8491d;
+  font-weight:bold;
+  text-shadow: 3px 2px white;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Booking-Showcase*/
+#booking-showcase{
+  min-height:800px;
+  background:url('../img/football.jpg') no-repeat 0 -600px;
+  text-align:center;
+  color:#ffffff;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  /*background-attachment: fixed;
+  background-repeat: no-repeat;*/
+}
+
+#booking-showcase h1{
+  margin-top:150px;
+  font-size:40px;
+  margin-bottom:10px;
+  color: white;
+}
+
+/* Pentru a alege oras, sport, baza, etc*/
+.drop-down {
+  height:38px;
+  min-width: 150px;
+  background:#e8491d;
+  border:0;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.drop-down-booking {
+  height:38px;
+  width: 700px;
+  background:#e8491d;
+  border:0;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+#map {
+  margin:auto;
+  width: 65%;
+  border: 3px solid white;
+  min-height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+#avatar {
+  vertical-align: middle;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+/* Management-Showcase*/
+#management-showcase {
+  min-height:600px;
+  background:url('../img/teren.png') no-repeat 0 -250px;
+  text-align:center;
+  color:#ffffff;
+  /*background-attachment: fixed;
+  background-repeat: no-repeat;*/
+}
+
+#management-showcase h1{
+  margin-top:150px;
+  font-size:40px;
+  color: white;
+}
+
+/* Showcase */
+#showcase{
+  min-height:600px;
+  background:url('../img/running.jpg') no-repeat 0 -300px;
+  text-align:center;
+  color:#ffffff;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  padding-top: 25px;
+}
+
+#showcase h1{
+  margin-top:200px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a;
+  /*border-bottom:#e8491d 3px solid;
+  border-top:#e8491d 3px solid;*/
+}
+
+#newsletter h1{
+  color: white;
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+#main {
+    margin-top: 100px;
+}
+
+footer{
+  padding:20px;
+
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+
+
+
+/* ----------------------------logIn Form-------------------------------- */
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.button-logIn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-logIn:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn-logIn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.container-logIn {
+  padding: 16px;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar-logIn {
+  width: 40%;
+  border-radius: 50%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  margin-bottom: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden;; /* Enable scroll if needed */
+  background:url('../img/running2.png');
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  max-width: 550px; /* Could be more or less, depending on screen size */
+  max-height: 690px;
+  overflow: auto;
+  border-radius: 9px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn-logIn {
+     width: 100%;
+  }
+}
+
+
+a:link, a:visited {
+  color: (internal value);
+  text-decoration: none;
+  cursor: auto;
+  cursor: pointer;
+}
+
+a:link:active, a:visited:active {
+  color: (internal value);
+}
+
+/* ----------------------------SignUp Form-------------------------------- */
+
+
+
+.cancelbtn-signUp{
+  color: white;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 218px;
+  text-align: center;
+  float: left;
+  opacity: 0.9;
+  padding: 14px 20px;
+  background-color: #f44336;
+  font-family: arial;
+  font-size:15px;
+  height: 23x;
+}
+
+.button-signUp{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  float: left;
+  width: 50%;
+  height: 50px;
+  font-family: arial;
+  font-size:15px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn-signUp, .button-signUp {
+     width: 100%;
+  }
+}
+
+
+
+/* --------------------------Card----------------------------------------- */
+
+#card-showcase{
+  min-height:700px;
+  background:url('../img/football.jpg') no-repeat 0 -600px;
+  text-align:center;
+  color:#ffffff;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  padding-top: 25px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0);
+  max-width: 350px;
+  max-height: 450px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: #35424a;
+  overflow: hidden;
+}
+
+.asa {
+  font-family: tahoma;
+}
+
+.price {
+  color: #e8491d;
+  font-size: 22px;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.block {
+  width: 100%;
+  display: inline-block;
+}
+
+
+/* ----------------------Error-------------- */
+
+.header{
+  font-family: "Times New Roman";
+  font-size: 50px;
+  text-align: center;
+}
+
+.paragraph{
+  font-family: "Times New Roman";
+  font-size: 25px;
+  text-align: center;
+  color:#f44336;
+}
+
+.error-container{
+  margin-top:270px;
+  color:#f44336;
+}
+
+.return-button{
+  color: white;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  opacity: 0.9;
+  padding: 14px 20px;
+  background-color: #f44336;
+  text-align: center;
+  margin-left: 620px;
+  border-radius: 9px;
+  font-size: 18px;
+  font-family: "Times New Roman";
+}
+
+#showcase-logIn{
+  background:url('../img/running.jpg');
+  text-align:center;
+  color:#ffffff;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  padding-top: 25px;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 20px;
+  min-width: 900px;
+  margin-left: 300px;
+  margin-top: 100px;
+  border: 2px solid #e8491d;
+}
+
+th {
+  border: 2px solid white;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+  color: white;
+  background-color: #e8491d;
+}
+
+td {
+  border: 2px solid #e8491d;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+  color: #e8491d;
+  background-color: white;
+}
+
+tr:hover {background-color: #f5f5f5;}
+
+.marker {
+    background-image:url('../img/mapbox-icon.png');
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="description" content="Book different sport facility or manane your own one."/>
+	  <meta name="keywords" content="booking, sport facility, management"/>
+  	<meta name="author" content="Andrei Jitaru"/>
+    <title>Sport Booking | Services</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+  </head>
+  <body>
+    <section>
+      <div id="id02" class="modal">
+        <form class="modal-content animate" method="post">
+          <div class="container-logIn">
+            <div class="imgcontainer">
+              <h1>Formular de plata</h1>
+            </div>
+            <p>Completati formularul de mai jos pentru a termina rezervarea.</p>
+            <hr></hr>
+            <label th:for="cardNumber"><b>Numar card</b></label>
+            <input type="text" placeholder="Numar card" name="numarCard"/>
+            <label th:for="securityCode"><b>Cod securitate</b></label>
+            <input type="text" placeholder="Cod securitate" name="codSecuritate"/>
+            <label th:for="nume"><b>Nume</b></label>
+            <input type="text" placeholder="Nume" name="nume"/>
+            <label th:for="prenume"><b>Prenume</b></label>
+            <input type="text" placeholder="Prenume" name="prenume"/>
+            <br></br>
+            <div class="clearfix">
+              <a href="http://localhost:8080/platforma/services" class="cancelbtn-signUp">Anuleaza</a>
+              <input type="submit" value="Plateste"  class="button-signUp"/>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

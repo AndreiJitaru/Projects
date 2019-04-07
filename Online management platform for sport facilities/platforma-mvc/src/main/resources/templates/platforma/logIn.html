@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="description" content="Book different sport facility or manane your own one."/>
+	  <meta name="keywords" content="booking, sport facility, management"/>
+  	<meta name="author" content="Andrei Jitaru"/>
+    <title>Sport Booking | Services</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+  </head>
+  <body>
+    <section>
+      <div id="id01" class="modal">
+        <form class="modal-content animate" method="post">
+          <div class="imgcontainer">
+            <!--span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span-->
+            <img src="/img/img_avatar2.png" alt="Avatar" class="avatar-logIn"/>
+          </div>
+          <div class="container-logIn">
+            <label th:for="numeUtilizator"><b>Username</b></label>
+            <input type="text" placeholder="Introduceti Username" name="numeUtilizator" th:required="required"/>
+            <label th:for="parola"><b>Parola</b></label>
+            <input type="password" placeholder="Introduceti Parola" name="parola" th:required="required"/>
+            <input type="submit" value="Conecteaza-te" class="button-logIn" style="font-size:15px;"/>
+          </div>
+          <div class="container-logIn">
+            <span class="psw">Nu ai cont?<a href="http://localhost:8080/platforma/signUp"> Inregistreaza-te gratis aici</a></span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
